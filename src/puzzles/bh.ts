@@ -16,6 +16,6 @@ console.time('doSomething');
 console.timeEnd('doSomething');
 
 // tests
-console.assert(input, 'Input is empty')
+console.assert(input, 'Input is empty');
 console.assert(partOne(testInput) === 1, 'part1');
 console.assert(partTwo(testInput) === 1, 'part2');
