@@ -3,7 +3,7 @@ import {input, testInput} from '../inputs/day2';
 type RGB = {[color: string]: number};
 const bag: RGB = {red: 12, green: 13, blue: 14};
 
-const partOneAndTwo = (input: string, power = false): number => {
+function partOneAndTwo(input: string, power = false): number {
     let sum = 0;
 
     input.split('\n').forEach((line) => {
@@ -26,7 +26,7 @@ const partOneAndTwo = (input: string, power = false): number => {
     });
 
     return sum;
-};
+}
 
 console.time('doSomething');
 

@@ -9,7 +9,7 @@ function findWaysToBeat(race: Race): number {
     return 0;
 }
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     const tmp = input
         .replace(/.*: +/g, '')
         .split('\n')
@@ -27,9 +27,9 @@ const partOne = (input: string): number => {
     }
 
     return waysToBeat;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     const tmp = input
         .replace(/.*: +| +/g, '')
         .split('\n')
@@ -38,7 +38,7 @@ const partTwo = (input: string): number => {
     const race: Race = {time: tmp[0], dist: tmp[1]};
 
     return findWaysToBeat(race);
-};
+}
 
 console.time('doSomething');
 

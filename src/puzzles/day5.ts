@@ -27,7 +27,7 @@ function convert(number: number, mapping: number[][]): number {
     return number;
 }
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     const {seeds, mappings} = parseInput(input);
 
     let minLocation = 1234567890123456;
@@ -41,9 +41,9 @@ const partOne = (input: string): number => {
     }
 
     return minLocation;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     const {seeds, mappings} = parseInput(input);
 
     let ranges: Range[] = [];
@@ -104,7 +104,7 @@ const partTwo = (input: string): number => {
     for (let range of ranges) minLocation = Math.min(minLocation, range.start);
 
     return minLocation;
-};
+}
 
 console.time('doSomething');
 

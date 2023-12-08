@@ -7,7 +7,7 @@ function parseDigit(digit: string): number {
     else return wordsForDigits.indexOf(digit) + 1;
 }
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     let sum = 0;
     const lines = input.split('\n');
 
@@ -19,9 +19,9 @@ const partOne = (input: string): number => {
     }
 
     return sum;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     let sum = 0;
     const lines = input.split('\n');
     const regex: RegExp = /\d|one|two|three|four|five|six|seven|eight|nine/;
@@ -42,7 +42,7 @@ const partTwo = (input: string): number => {
     }
 
     return sum;
-};
+}
 
 console.time('doSomething');
 

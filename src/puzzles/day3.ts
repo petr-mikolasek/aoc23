@@ -2,7 +2,7 @@ import {remove} from 'lodash';
 import {input, testInput} from '../inputs/day3';
 import {Coordinate, getNeighbors} from '../stuff';
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     const map: string[][] = input.split('\n').map((line) => line.split(''));
     const mapY = map.length;
     const mapX = map[0].length;
@@ -35,9 +35,9 @@ const partOne = (input: string): number => {
     }
 
     return sum;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     const map: string[][] = input.split('\n').map((line) => line.split(''));
     const mapY = map.length;
     const mapX = map[0].length;
@@ -73,7 +73,7 @@ const partTwo = (input: string): number => {
     }
 
     return sum;
-};
+}
 
 console.time('doSomething');
 

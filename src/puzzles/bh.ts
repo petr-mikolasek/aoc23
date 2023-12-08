@@ -1,12 +1,12 @@
 import {input, testInput} from '../inputs/day';
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     return 0;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     return 0;
-};
+}
 
 console.time('doSomething');
 

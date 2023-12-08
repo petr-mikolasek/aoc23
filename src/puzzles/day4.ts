@@ -1,7 +1,7 @@
 import {intersection} from 'lodash';
 import {input, testInput} from '../inputs/day4';
 
-const partOne = (input: string): number => {
+function partOne(input: string): number {
     const cards = input.split('\n').map((line) => line.split(/: +| \| +/g));
     let sum = 0;
 
@@ -14,9 +14,9 @@ const partOne = (input: string): number => {
         if (numMatches > 0) sum += 2 ** (numMatches - 1);
     }
     return sum;
-};
+}
 
-const partTwo = (input: string): number => {
+function partTwo(input: string): number {
     const cards = input.split('\n').map((line) => line.split(/: +| \| +/g));
     const cardAmounts: number[] = new Array(cards.length).fill(1);
 
@@ -32,7 +32,7 @@ const partTwo = (input: string): number => {
     }
 
     return cardAmounts.reduce((sum, n) => sum + n);
-};
+}
 
 console.time('doSomething');
 

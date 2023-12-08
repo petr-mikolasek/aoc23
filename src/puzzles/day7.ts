@@ -86,7 +86,7 @@ function compareHands(h1: Hand, h2: Hand): number {
     return 0;
 }
 
-const partOneAndTwo = (input: string, joker = false): number => {
+function partOneAndTwo(input: string, joker = false): number {
     const hands: Hand[] = input.split('\n').map((row) => parseHand(row, joker));
 
     hands.sort((h1, h2) => compareHands(h1, h2));
@@ -97,7 +97,7 @@ const partOneAndTwo = (input: string, joker = false): number => {
     }
 
     return winnings;
-};
+}
 
 console.time('doSomething');
 
