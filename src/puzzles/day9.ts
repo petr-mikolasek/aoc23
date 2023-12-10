@@ -19,7 +19,7 @@ function extrapolate(sequence: number[], backwards = false): number {
 }
 
 function partOneAndTwo(input: string, backwards = false): number {
-    const sequences: number[][] = input.split('\n').map((row) => row.split(' ').map((num) => parseInt(num)));
+    const sequences: number[][] = input.split('\n').map((row) => row.split(' ').map(Number));
     let sum = 0;
 
     for (let sequence of sequences) {
